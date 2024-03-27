@@ -1,0 +1,110 @@
+/* GENERAL */
+:root {
+    /* Primary */
+    --bright-blue: hsl(220, 98%, 61%);
+    --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+    /*Light Theme */
+    --very-light-gray: hsl(0, 0%, 98%);
+    --very-light-grayish-blue: hsl(236, 33%, 92%);
+    --light-grayish-blue: hsl(233, 11%, 84%);
+    --dark-grayish-blue: hsl(236, 9%, 61%);
+    --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+    /* Dark Theme */
+    --very-dark-blue: hsl(235, 21%, 11%);
+    --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+    --light-grayish-blue: hsl(234, 39%, 85%);
+    --light-grayish-blue: (hover): hsl(236, 33%, 92%);
+    --dark-grayish-blue: hsl(234, 11%, 52%);
+    --very-dark-grayish-blue: hsl(233, 14%, 35%);
+    --very-dark-grayish-blue: hsl(237, 14%, 26%);
+}
+
+body {
+    font-size: 18px;
+}
+
+/* MAIN */
+main {
+    position: relative;
+}
+
+.form-states-desktop {
+    display: none;
+}
+
+/* HERO */
+.hero-container {
+    height: 100vh;
+}
+
+.hero-top {
+    height: 190px;
+    background-image: url(/images/bg-mobile-light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em;
+}
+
+.hero-bottom {
+    height: auto;
+    background-color: var(--very-light-gray);
+}
+
+/* FORM */
+form {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    padding: 0 1em;
+}
+
+.form-top {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.form-middle {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+.form-middle .form-items {
+    border-bottom: 1px solid black;
+}
+
+.checkmark {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 1px solid black;
+    margin-right: 1em;
+}
+
+.form-items {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: .5em .8em;
+}
+
+.form-items img {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.form-create {
+    margin-bottom: 1em;
+}
+
+.form-info {
+    margin-bottom: 1em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
