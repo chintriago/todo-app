@@ -41,7 +41,7 @@ main {
 
 .hero-top {
     height: 190px;
-    background-image: url(/images/bg-mobile-light.jpg);
+    background-image: url(../images/bg-mobile-light.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
