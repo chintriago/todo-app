@@ -25,18 +25,40 @@ body {
     font-size: 18px;
 }
 
-/* MAIN */
-main {
-    position: relative;
+/* UTILITY CLASSES */
+.form-items {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: .5em .8em;
 }
 
 .form-states-desktop {
     display: none;
 }
 
+.checkmark {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 1px solid black;
+    margin-right: 1em;
+}
+
+.box-shadow {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* MAIN */
+main {
+    position: relative;
+    height: 100%;
+}
+
 /* HERO */
 .hero-container {
-    height: 100vh;
+    height: 100%;
 }
 
 .hero-top {
@@ -61,38 +83,14 @@ main {
 /* FORM */
 form {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 100px;
     padding: 0 1em;
 }
 
-.form-top {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-
-.form-middle {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-
-
 .form-middle .form-items {
     border-bottom: 1px solid black;
-}
-
-.checkmark {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    outline: 1px solid black;
-    margin-right: 1em;
-}
-
-.form-items {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: .5em .8em;
 }
 
 .form-items img {
@@ -106,5 +104,20 @@ form {
 
 .form-info {
     margin-bottom: 1em;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    justify-content: space-between;
+}
+
+.form-states {
+    justify-content: space-evenly;
+}
+
+.form-states button {
+    cursor: pointer;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
 }
