@@ -22,7 +22,10 @@
 }
 
 body {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
+    /* make responsive under 320px */
+    min-width: 320px;
 }
 
 /* UTILITY CLASSES */
@@ -30,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
-    padding: .5em .8em;
+    padding: .8em 1.15em;
 }
 
 .form-states-desktop {
@@ -39,11 +42,18 @@ body {
 
 .checkmark {
     cursor: pointer;
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     border-radius: 50%;
     outline: 1px solid black;
     margin-right: 1em;
+}
+
+.checkmark-cross {
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bright-blue);
 }
 
 .box-shadow {
@@ -73,6 +83,19 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 2em 1em;
+}
+
+.hero-content h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.hero-content img {
+    min-width: 25px;
+    height: 25px;
 }
 
 .hero-bottom {
@@ -119,5 +142,5 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding: 3em 0;
 }
