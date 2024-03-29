@@ -15,7 +15,9 @@
     --very-dark-blue: hsl(235, 21%, 11%);
     --very-dark-desaturated-blue: hsl(235, 24%, 19%);
     --light-grayish-blue: hsl(234, 39%, 85%);
-    --light-grayish-blue: (hover): hsl(236, 33%, 92%);
+    /* hover */
+    --light-grayish-blue: hsl(236, 33%, 92%);
+
     --dark-grayish-blue: hsl(234, 11%, 52%);
     --very-dark-grayish-blue: hsl(233, 14%, 35%);
     --very-dark-grayish-blue: hsl(237, 14%, 26%);
@@ -33,9 +35,11 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
+    color: var(--very-dark-grayish-blue);
     font-size: .75rem;
+    font-weight: 500;
     letter-spacing: 0;
-    padding: 1.25em;
+    padding: 1.5em;
 }
 
 .form-items img {
@@ -51,14 +55,14 @@ body {
 
 .checkmark {
     cursor: pointer;
-    min-width: 18px;
-    height: 18px;
+    min-width: 20px;
+    height: 20px;
     border-radius: 50%;
-    outline: 1px solid black;
+    border: 1px solid var(--light-grayish-blue);
     margin-right: 1em;
 }
 
-.checkmark-cross {
+.checked {
     background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -140,6 +144,7 @@ form {
 }
 
 .form-info {
+    color: var(--dark-grayish-blue);
     margin-bottom: 1em;
     justify-content: space-between;
     border-bottom-left-radius: 4px;
@@ -147,7 +152,9 @@ form {
 }
 
 .form-states {
+    color: var(--dark-grayish-blue);
     justify-content: space-evenly;
+    border-radius: 4px;
 }
 
 .form-states button {
@@ -159,4 +166,5 @@ form {
     justify-content: center;
     align-items: center;
     padding: 3em 0;
+    color: var(--dark-grayish-blue);
 }
