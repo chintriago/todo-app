@@ -49,6 +49,10 @@ body {
     height: 13px;
 }
 
+.form-middle .form-items {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
 .form-states-desktop {
     display: none;
 }
@@ -137,10 +141,6 @@ form {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     overflow: hidden;
-}
-
-.form-middle .form-items {
-    border-bottom: 1px solid black;
 }
 
 .form-info {
