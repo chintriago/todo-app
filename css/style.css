@@ -22,7 +22,10 @@
 }
 
 body {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
+    /* make responsive under 320px */
+    min-width: 320px;
 }
 
 /* UTILITY CLASSES */
@@ -30,7 +33,16 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
-    padding: .5em .8em;
+    font-size: .75rem;
+    letter-spacing: 0;
+    padding: 1.25em;
+}
+
+.form-items img {
+    cursor: pointer;
+    margin-left: auto;
+    width: 13px;
+    height: 13px;
 }
 
 .form-states-desktop {
@@ -39,11 +51,18 @@ body {
 
 .checkmark {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    min-width: 18px;
+    height: 18px;
     border-radius: 50%;
     outline: 1px solid black;
     margin-right: 1em;
+}
+
+.checkmark-cross {
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bright-blue);
 }
 
 .box-shadow {
@@ -62,7 +81,7 @@ main {
 }
 
 .hero-top {
-    height: 190px;
+    height: 225px;
     background-image: url(../images/bg-mobile-light.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +91,20 @@ main {
 .hero-content {
     display: flex;
     justify-content: space-between;
-    padding: 2em 1em;
+    padding: 3em 1.25em 0;
+}
+
+.hero-content h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.hero-content img {
+    min-width: 20px;
+    height: 25px;
 }
 
 .hero-bottom {
@@ -81,30 +113,37 @@ main {
 }
 
 /* FORM */
+
+/* FORM TOP */
 form {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 100px;
-    padding: 0 1em;
+    top: 125px;
+    padding: 0 1.25em;
+}
+
+.form-create {
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+/* FORM MIDDLE */
+.form-middle {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
 }
 
 .form-middle .form-items {
     border-bottom: 1px solid black;
 }
 
-.form-items img {
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.form-create {
-    margin-bottom: 1em;
-}
-
 .form-info {
     margin-bottom: 1em;
     justify-content: space-between;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .form-states {
@@ -119,5 +158,5 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding: 3em 0;
 }
