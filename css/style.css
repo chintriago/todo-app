@@ -83,7 +83,7 @@ body {
 
 .completed {
     text-decoration: line-through;
-    color: var(--light-grayish-blue);
+    color: var(--dark-grayish-blue);
 }
 
 /* MAIN */
