@@ -49,14 +49,9 @@ body {
 }
 
 .form-items img {
-    cursor: pointer;
     margin-left: auto;
     width: 13px;
     height: 13px;
-}
-
-.form-items span {
-    cursor: pointer;
 }
 
 .form-middle .form-items {
@@ -68,7 +63,6 @@ body {
 }
 
 .checkmark {
-    cursor: pointer;
     min-width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -90,6 +84,10 @@ body {
 .completed {
     text-decoration: line-through;
     color: var(--dark-grayish-blue);
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -128,7 +126,6 @@ main {
 }
 
 .hero-content img {
-    cursor: pointer;
     min-width: 20px;
     height: 25px;
 }
@@ -173,10 +170,6 @@ form {
     color: var(--dark-grayish-blue);
     justify-content: space-evenly;
     border-radius: 4px;
-}
-
-.form-states button {
-    cursor: pointer;
 }
 
 .form-footer {
