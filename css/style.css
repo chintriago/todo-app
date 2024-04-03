@@ -196,13 +196,13 @@ form {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     html {
         font-size: 23px;
     }
 
     form {
-        max-width: 600px;
+        max-width: 700px;
         padding-top: 155px;
     }
 
@@ -212,7 +212,7 @@ form {
     }
 
     .hero-content {
-        max-width: 600px;
+        max-width: 700px;
         padding-top: 4em;
     }
 
