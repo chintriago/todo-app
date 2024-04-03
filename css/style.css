@@ -95,6 +95,7 @@ body {
 /* MAIN */
 main {
     position: relative;
+    height: 100vh;
 }
 
 /* HERO */
@@ -141,15 +142,16 @@ main {
 
 /* FORM TOP */
 form {
+    height: 100%;
     width: 100%;
     position: absolute;
-    top: 125px;
-    padding: 0 1.25em;
+    top: 0;
+    padding: 125px 1.25em 0;
 }
 
 .form-create {
     border-radius: 4px;
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
 }
 
 /* FORM MIDDLE */
@@ -186,13 +188,16 @@ form {
 @media screen and (min-width: 600px) {
     form {
         max-width: 600px;
+        padding-top: 155px;
     }
 
     .hero-top {
+        height: 275px;
         background-image: url(../images/bg-desktop-light.jpg);
     }
 
     .hero-content {
         max-width: 600px;
+        padding-top: 4em;
     }
 }
