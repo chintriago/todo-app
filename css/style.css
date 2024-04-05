@@ -149,7 +149,7 @@ main {
 }
 
 .hero-bottom {
-    height: auto;
+    height: 100%;
     background-color: var(--very-light-gray);
 }
 
@@ -160,8 +160,8 @@ form {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
-    padding: 125px 1.25em 0;
+    top: 125px;
+    padding: 0 1.25em 0;
 }
 
 .form-create {
@@ -203,7 +203,7 @@ form {
 
     form {
         max-width: 700px;
-        padding-top: 155px;
+        top: 170px;
     }
 
     .hero-top {
