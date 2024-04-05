@@ -10,7 +10,7 @@ imgToggle.addEventListener('click', function () {
     if (imgToggle.getAttribute('src') === moonUrl) {
         // DARK MODE
         imgToggle.setAttribute('src', sunUrl);
-        heroTop.style.backgroundImage = "url('../images/bg-mobile-dark.jpg')";
+        heroTop.style.backgroundImage = "url('./images/bg-mobile-dark.jpg')";
         heroBottom.style.backgroundColor = "var(--very-dark-blue)";
         for (i = 0; i < formItems.length; i++) {
             formItems[i].style.backgroundColor = "var(--very-dark-desaturated-blue)";
@@ -18,7 +18,7 @@ imgToggle.addEventListener('click', function () {
     } else {
         // LIGHTMODE
         imgToggle.setAttribute('src', moonUrl);
-        heroTop.style.backgroundImage = "url('../images/bg-mobile-light.jpg')";
+        heroTop.style.backgroundImage = "url('./images/bg-mobile-light.jpg')";
         heroBottom.style.backgroundColor = "var(--very-light-gray)";
         for (i = 0; i < formItems.length; i++) {
             formItems[i].style.backgroundColor = "white";
