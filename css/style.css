@@ -7,20 +7,20 @@
     /*Light Theme */
     --very-light-gray: hsl(0, 0%, 98%);
     --very-light-grayish-blue: hsl(236, 33%, 92%);
-    --light-grayish-blue: hsl(233, 11%, 84%);
-    --dark-grayish-blue: hsl(236, 9%, 61%);
-    --very-dark-grayish-blue: hsl(235, 19%, 35%);
+    --light-grayish-blue-light: hsl(233, 11%, 84%);
+    --dark-grayish-blue-light: hsl(236, 9%, 61%);
+    --very-dark-grayish-blue-light: hsl(235, 19%, 35%);
 
     /* Dark Theme */
     --very-dark-blue: hsl(235, 21%, 11%);
     --very-dark-desaturated-blue: hsl(235, 24%, 19%);
     --light-grayish-blue: hsl(234, 39%, 85%);
     /* hover */
-    --light-grayish-blue: hsl(236, 33%, 92%);
+    --light-grayish-blue-hover: hsl(236, 33%, 92%);
 
     --dark-grayish-blue: hsl(234, 11%, 52%);
     --very-dark-grayish-blue: hsl(233, 14%, 35%);
-    --very-dark-grayish-blue: hsl(237, 14%, 26%);
+    --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
 }
 
 html {
@@ -43,12 +43,12 @@ body {
 .form-items {
     display: flex;
     align-items: center;
-    background-color: white;
-    color: var(--very-dark-grayish-blue);
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-grayish-blue-light);
     font-size: .7rem;
     font-weight: 500;
     letter-spacing: 0;
-    padding: 1.5em;
+    padding: 1.15em 1.45em;
 }
 
 .form-items img {
@@ -65,7 +65,7 @@ body {
     display: none;
 }
 
-.checkmark {
+.circles {
     min-width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -93,11 +93,11 @@ body {
 
 .completed {
     text-decoration: line-through;
-    color: var(--dark-grayish-blue);
+    color: var(--light-grayish-blue-light);
 }
 
 .active {
-    color: hsl(220, 98%, 61%);
+    color: hsl(220, 98%, 61%) !important;
 }
 
 .pointer {
@@ -148,7 +148,9 @@ main {
     height: 25px;
 }
 
+/* HAVE TO FIX HEIGHT ISSUE BELOW */
 .hero-bottom {
+    /* height: calc(100% - 225px); */
     height: 100%;
     background-color: var(--very-light-gray);
 }
@@ -157,6 +159,7 @@ main {
 
 /* FORM TOP */
 form {
+    /* height: calc(100% - 125px); */
     height: 100%;
     width: 100%;
     position: absolute;
@@ -196,7 +199,7 @@ form {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 525px) {
     html {
         font-size: 23px;
     }
