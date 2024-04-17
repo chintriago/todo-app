@@ -66,11 +66,16 @@ body {
 }
 
 .circles {
+    position: relative;
     min-width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 1px solid var(--light-grayish-blue);
     margin-right: 1em;
+}
+
+.crosses {
+    display: none;
 }
 
 .checked {
@@ -107,6 +112,51 @@ body {
 .box-shadow {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
+
+/* HOVER STATES */
+.form-items:hover .crosses {
+    display: initial;
+}
+
+/* .circles hover effect light mode */
+.circles:hover {
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.circles:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--very-light-gray);
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+
+/* .circles hover effect dark mode used with js */
+
+.circles-dark:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--very-dark-desaturated-blue);
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+
+.form-states-hover:hover {
+    color: var(--very-dark-blue)!important;
+}
+
+.pointer-dark:hover {
+    color: var(--light-grayish-blue)!important;
+}
+
 
 /* MAIN */
 main {

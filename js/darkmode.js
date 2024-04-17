@@ -16,6 +16,8 @@ const completed = document.querySelector('.completed');
 const circles = document.querySelectorAll('.circles');
 const fontColors = document.querySelectorAll('.font-colors');
 
+const formStatesHoverList = document.querySelectorAll('.form-states-hover');
+
 // HAVE TO FIX RESIZE ISSUE BELOW
 // window.addEventListener('resize', function () {
 //     if (mediaQuery.matches) {
@@ -42,7 +44,14 @@ function darkMode(url) {
     }
     // for loop for all .circles
     for (i = 0; i < circles.length; i++) {
+        // adds .circle-dark to all .circles for css hover effect on dark mode
+        circles[i].classList.add("circles-dark");
         circles[i].style.borderColor = "var(--very-dark-grayish-blue-light)";
+    }
+    // for loop for all .form-states-hover
+    for (i = 0; i < formStatesHoverList.length; i++) {
+        // adds .pointer-dark-dark to all .form-states-hover for css hover effect on dark mode
+        formStatesHoverList[i].classList.add("pointer-dark");
     }
     // for loop for all .font-colors
     for (i = 0; i < fontColors.length; i++) {
@@ -66,7 +75,14 @@ function lightMode(url) {
     }
     // for loop for all .circles
     for (i = 0; i < circles.length; i++) {
+        // removes all .circles-dark for light mode
+        circles[i].classList.remove("circles-dark");
         circles[i].style.borderColor = "var(--light-grayish-blue)";
+    }
+    // for loop for all .form-states-hover
+    for (i = 0; i < formStatesHoverList.length; i++) {
+        // removes all .pointer-dark for light mode
+        formStatesHoverList[i].classList.remove("pointer-dark");
     }
     // for loop for all .font-colors
     for (i = 0; i < fontColors.length; i++) {
