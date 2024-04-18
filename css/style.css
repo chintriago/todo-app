@@ -106,7 +106,7 @@ body {
 }
 
 .pointer {
-    cursor: pointer;
+    cursor: pointer!important;
 }
 
 .box-shadow {
@@ -229,6 +229,10 @@ form {
     overflow: hidden;
 }
 
+.form-items-middle {
+    cursor: move;
+}
+
 .form-info {
     color: var(--dark-grayish-blue);
     margin-bottom: 1em;
@@ -244,7 +248,8 @@ form {
 }
 
 .form-footer {
-    padding-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     color: var(--dark-grayish-blue);
 }
 
@@ -278,6 +283,7 @@ form {
     }
 
     .form-footer {
-        padding-top: 1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
