@@ -31,6 +31,8 @@ body {
     font-family: "Josefin Sans", sans-serif;
     /* make responsive under 320px */
     min-width: 320px;
+
+    background-color: var(--very-light-gray);
 }
 
 /* UTILITY CLASSES */
@@ -160,29 +162,21 @@ body {
 
 /* MAIN */
 main {
-    position: relative;
-    height: 100vh;
+    width: 100%;
+    height: calc(100vh + 2em);
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-color: var(--very-light-gray);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    background-position: top;
 }
 
 /* HERO */
-.hero-container {
-    height: 100%;
-    width: 100%;
-}
-
-.hero-top {
-    height: 225px;
-    background-image: url(../images/bg-mobile-light.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .hero-content {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 3em 1.25em 0;
+    padding-bottom: 1.5em;
 }
 
 .hero-content h1 {
@@ -198,22 +192,16 @@ main {
     height: 25px;
 }
 
-/* HAVE TO FIX HEIGHT ISSUE BELOW */
-.hero-bottom {
-    /* height: calc(100% - 225px); */
-    height: 100%;
-    background-color: var(--very-light-gray);
-}
-
 /* FORM */
 
 /* FORM TOP */
 form {
     /* height: calc(100% - 125px); */
-    height: 100%;
     width: 100%;
+    /* to make resposnisve under 320px */
+    min-width: 320px;
     position: absolute;
-    top: 125px;
+    top: 50px;
     padding: 0 1.25em 0;
 }
 
@@ -248,30 +236,27 @@ form {
 }
 
 .form-footer {
-    padding-top: 2em;
-    padding-bottom: 2em;
     color: var(--dark-grayish-blue);
 }
 
+.form-footer small {
+    padding: 3em 0;
+}
+
 /* MEDIA QUERIES */
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
     html {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     form {
-        max-width: 700px;
-        top: 170px;
+        max-width: 650px;
+        top: 125px;
     }
 
-    .hero-top {
-        height: 275px;
+    main {
+        background-size: 100% 315px;
         background-image: url(../images/bg-desktop-light.jpg);
-    }
-
-    .hero-content {
-        max-width: 700px;
-        padding-top: 4em;
     }
 
     .form-states-mobile {
@@ -281,9 +266,30 @@ form {
     .form-states-desktop {
         display: initial;
     }
+}
 
-    .form-footer {
-        padding-top: 2em;
-        padding-bottom: 2em;
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 24px;
+    }
+
+    form {
+        max-width: 650px;
+        top: 80px;
+        padding: 0;
+    }
+
+    main {
+        background-size: 100% 315px;
+        background-image: url(../images/bg-desktop-light.jpg);
+    }
+
+    .form-states-mobile {
+        display: none;
+    }
+
+    .form-states-desktop {
+        display: initial;
     }
 }

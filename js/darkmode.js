@@ -31,7 +31,7 @@ const formStatesHoverList = document.querySelectorAll('.form-states-hover');
 function darkMode(url) {
     imgToggle.setAttribute('src', sunUrl);
     heroTop.style.backgroundImage = url;
-    heroBottom.style.backgroundColor = "var(--very-dark-blue)";
+    heroTop.style.backgroundColor = "var(--very-dark-blue)";
     completed.style.color = "var(--very-dark-grayish-blue)";
     // for loop for all .form-items
     for (i = 0; i < formItems.length; i++) {
@@ -62,7 +62,7 @@ function darkMode(url) {
 function lightMode(url) {
     imgToggle.setAttribute('src', moonUrl);
     heroTop.style.backgroundImage = url;
-    heroBottom.style.backgroundColor = "var(--very-light-gray)";
+    heroTop.style.backgroundColor = "var(--very-light-gray)";
     completed.style.color = "var(--light-grayish-blue-light)";
     // for loop for all .form-items
     for (i = 0; i < formItems.length; i++) {

@@ -1,1 +1,1 @@
-const formItemsMiddle = document.querySelectorAll('.form-items-middle');
+// const formItemsMiddle = document.querySelectorAll('.form-items-middle');
