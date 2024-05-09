@@ -243,6 +243,12 @@ form {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    html {
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 500px) {
     html {
         font-size: 24px;
