@@ -25,14 +25,14 @@
 
 html {
     font-size: 18px;
+    height: 100%;
 }
 
 body {
     font-family: "Josefin Sans", sans-serif;
     /* make responsive under 320px */
     min-width: 320px;
-
-    background-color: var(--very-light-gray);
+    height: 100%;
 }
 
 /* UTILITY CLASSES */
@@ -108,7 +108,7 @@ body {
 }
 
 .pointer {
-    cursor: pointer!important;
+    cursor: pointer !important;
 }
 
 .box-shadow {
@@ -152,18 +152,19 @@ body {
 }
 
 .form-states-hover:hover {
-    color: var(--very-dark-blue)!important;
+    color: var(--very-dark-blue) !important;
 }
 
 .pointer-dark:hover {
-    color: var(--light-grayish-blue)!important;
+    color: var(--light-grayish-blue) !important;
 }
 
 
 /* MAIN */
 main {
     width: 100%;
-    height: calc(100vh + 2em);
+    height: auto;
+    min-height: 100%;
     background-image: url(../images/bg-mobile-light.jpg);
     background-color: var(--very-light-gray);
     background-repeat: no-repeat;
@@ -196,13 +197,11 @@ main {
 
 /* FORM TOP */
 form {
-    /* height: calc(100% - 125px); */
     width: 100%;
-    /* to make resposnisve under 320px */
     min-width: 320px;
-    position: absolute;
-    top: 50px;
-    padding: 0 1.25em 0;
+    margin: 0 auto 0;
+    padding: 50px 1em 0;
+
 }
 
 .form-create {
@@ -244,40 +243,14 @@ form {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-    html {
-        font-size: 20px;
-    }
-
-    form {
-        max-width: 650px;
-        top: 125px;
-    }
-
-    main {
-        background-size: 100% 315px;
-        background-image: url(../images/bg-desktop-light.jpg);
-    }
-
-    .form-states-mobile {
-        display: none;
-    }
-
-    .form-states-desktop {
-        display: initial;
-    }
-}
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
     html {
         font-size: 24px;
     }
 
     form {
-        max-width: 650px;
-        top: 80px;
-        padding: 0;
+        max-width: 600px;
+        padding-top: 100px;
     }
 
     main {
