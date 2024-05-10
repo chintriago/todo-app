@@ -239,11 +239,12 @@ form {
 }
 
 .form-footer small {
-    padding: 3em 0;
+    padding: 1em 0 2em;
+    font-size: 13px;
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 400px) and (max-width: 499px) {
+@media screen and (min-width: 376px) and (max-width: 499px) {
     html {
         font-size: 20px;
     }
@@ -251,7 +252,7 @@ form {
 
 @media screen and (min-width: 500px) {
     html {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     form {
@@ -260,7 +261,7 @@ form {
     }
 
     main {
-        background-size: 100% 315px;
+        background-size: 100% 300px;
         background-image: url(../images/bg-desktop-light.jpg);
     }
 
